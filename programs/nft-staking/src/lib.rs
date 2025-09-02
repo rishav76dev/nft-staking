@@ -37,4 +37,10 @@ pub mod nft_staking {
         ctx.accounts.initialize_user(&ctx.bumps)
     }
 
+    pub fn stake_nft(ctx: Context<StakeNFT>, seed: u64, locked_stackers: bool, lock_period:i64)  -> Result<()>{
+        ctx.accounts.stake_nft(seed, locked_stackers, lock_period, &ctx.bumps)
+    }
+
+    
 }
+

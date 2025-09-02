@@ -4,3 +4,5 @@ pub use initialize_config::*;
 pub mod initialize_user;
 pub use initialize_user::*;
 
+pub mod stake_nft;
+pub use stake_nft::*;
