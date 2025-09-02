@@ -41,6 +41,8 @@ pub mod nft_staking {
         ctx.accounts.stake_nft(seed, locked_stackers, lock_period, &ctx.bumps)
     }
 
-    
+    pub fn unstake_nft(ctx: Context<UnStakeNFT>) -> Result<()> {
+        ctx.accounts.unstake_nft()
+    }
 }
 
